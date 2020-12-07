@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "my-ENV-vs-color-theme",
+                "label": "my-VUE-vs-color-theme",
                 "uiTheme": "vs-dark",
-                "path": "./themes/my-ENV-vs-color-theme.json"
+                "path": "./themes/my-VUE-vs-color-theme.json"
             },
             {
                 "label": "my-HTML-vs-color-theme",
@@ -35,6 +35,11 @@
                 "label": "my-SCSS-vs-color-theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/my-SCSS-vs-color-theme.json"
+            },
+            {
+                "label": "my-ENV-vs-color-theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/my-ENV-vs-color-theme.json"
             }
         ]
     }
