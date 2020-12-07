@@ -60,7 +60,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#00FA9A"
+				"foreground": "#F0E68C"
 			}
 		},
 		{ // Text 
@@ -596,31 +596,41 @@
 				"foreground": "#00FA9A"
 			}
 		},
-		{ // Directive 
+		{ // Vue Attributes 
 			"scope": [
-				"entity.other.attribute-name.html meta.directive.vue"
+				"vue.attribute.html",
 			],
 			"settings": {
-				"fontStyle": "",
-				"foreground": "#ff0000"
+				"fontStyle": "bold",
+				"foreground": "#00FA9A"
 			}
 		},
-		{ // Text 
+		{ // Vue Attribute String 
 			"scope": [
-				"text"
+				"vue.attribute.string.begin.html",
+				"vue.attribute.string.end.html",
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#ff0000"
+				"foreground": "#00FA9A"
 			}
 		},
-		{ // Text 
+		{ // Vue Attributes Seperators
 			"scope": [
-				"text"
+				"vue.attribute.seperator.html",
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#7affcc"
+			}
+		},
+		{ // Vue Attribute Key Value Seperator 
+			"scope": [
+				"vue.attribute.seperator.key-value.html",
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#ff0000"
+				"foreground": "#7affcc"
 			}
 		},
 		{ // Text 
