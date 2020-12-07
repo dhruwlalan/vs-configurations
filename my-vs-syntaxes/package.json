@@ -1,0 +1,25 @@
+{
+    "name": "myscsssyntax",
+    "displayName": "myScssSyntax",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scss",
+            "aliases": ["myScssSyntax", "scss"],
+            "extensions": [".scss"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scss",
+            "scopeName": "source.css.scss",
+            "path": "./syntaxes/scss.tmLanguage.json"
+        }]
+    }
+}

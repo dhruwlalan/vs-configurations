@@ -1,0 +1,21 @@
+{
+    "name": "myvscolortheme",
+    "displayName": "myVScolorTheme",
+    "description": "My Color scheme for Visual Studio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "myVScolorTheme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/my-HTML-vs-color-theme.json"
+            },
+        ]
+    }
+}
