@@ -16,6 +16,10 @@
 			"scope": [
 				"entity.name.tag.html",
 				"entity.name.tag.block.any.html",
+				"generic.tag.block.html",
+				"generic.tag.structure.html",
+				"generic.tag.inline.html",
+				"meta.tag.block.any.html",
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -39,6 +43,7 @@
 			"scope": [
 				"meta.attribute",
 				"entity.other.attribute-name.html",
+				"generic.attribute.html",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -172,6 +177,7 @@
 			"scope": [
 				"keyword.operator.comparison.js",
 				"keyword.operator.assignment.compound.js",
+				"keyword.operator.expression.in.js",
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -546,26 +552,7 @@
 				"foreground": "#EE82EE"
 			}
 		},
-
 		// *********************************************************** VUE SPECIFIC
-		// "white":            "white",						#ffffff
-		// "comment":          "#808080",					#808080
-		// "operatorLight":    "palegoldenrod",				#EEE8AA
-		// "operatorMedium":   "khaki",						#F0E68C
-		// "operatorDark":     "yellow",					#FFFF00
-		// "keyword":          "deeppink",					#FF1493
-		// "string":           "springgreen",				#00FF7F
-		// "tsexpressionb":    "rgba(124, 124, 124, 0.2)",	#7c7c7c33
-		// "tsexpressionf":    "rgba(124, 124, 124, 0.2)",	#7c7c7c33
-		// "constant":         "violet",					#EE82EE
-		// "function":         "cyan",						#00FFFF
-		// "functionIO":       "orange",					#FFA500
-		// "objectProperty":   "#ff9999",					#ff9999
-		// "this":             "khaki",						#F0E68C
-		// "class":            "#F1FF7B",					#F1FF7B
-		// "domObject":        "mediumspringgreen"			#00FA9A
-		// ***********************************************************
-
 		{ // Template 
 			"scope": [
 				"entity.name.tag.template.html",
@@ -579,10 +566,10 @@
 		},
 		{ // Component 
 			"scope": [
-				"support.class.component.html"
+				"vue.component.tag.html"
 			],
 			"settings": {
-				"fontStyle": "",
+				"fontStyle": "bold",
 				"foreground": "#FF69B4"
 			}
 		},
@@ -633,13 +620,14 @@
 				"foreground": "#7affcc"
 			}
 		},
-		{ // Text 
+		{ // Vue Builtin Tags 
 			"scope": [
-				"text"
+				"vue.builtin.tag.block.html",
+				"vue.builtin.tag.inline.html",
 			],
 			"settings": {
-				"fontStyle": "",
-				"foreground": "#ff0000"
+				"fontStyle": "bold",
+				"foreground": "#56ffbb"
 			}
 		},
 	]

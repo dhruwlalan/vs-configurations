@@ -39,7 +39,7 @@
           "begin": "(>)",
           "beginCaptures": {
             "1": {
-              "name": "punctuation.definition.tag.end.html"
+              "name": "entity.name.tag.template.html"
             }
           },
           "end": "(?=^</template>)",
