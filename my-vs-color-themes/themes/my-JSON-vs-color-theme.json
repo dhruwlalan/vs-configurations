@@ -1,0 +1,62 @@
+{
+	"name": "my-JSON-vs-color-theme",
+	"type": "dark",
+	"tokenColors": [
+		{ // Comment 
+			"scope": [
+				"comment"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#808080"
+			}
+		},
+		{ // Dictionary Begin End  
+			"scope": [
+				"punctuation.definition.dictionary.begin.json",
+				"punctuation.definition.dictionary.end.json"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#ffffff"
+			}
+		},
+		{ // Key 
+			"scope": [
+				"support.type.property-name.json"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#ff9999"
+			}
+		},
+		{ // Seperator 
+			"scope": [
+				"punctuation.separator.dictionary.key-value.json",
+				"punctuation.separator.dictionary.pair.json"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#ffffff"
+			}
+		},
+		{ // String Value 
+			"scope": [
+				"string.quoted.double.json"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#00FA9A"
+			}
+		},
+		{ // Constant Value 
+			"scope": [
+				"constant.language.json"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#EE82EE"
+			}
+		},
+	]
+}

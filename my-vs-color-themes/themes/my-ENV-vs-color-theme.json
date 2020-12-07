@@ -1,0 +1,42 @@
+{
+	"name": "my-ENV-vs-color-theme",
+	"type": "dark",
+	"tokenColors": [
+		{ // Comment 
+			"scope": [
+				"comment"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#808080"
+			}
+		},
+		{ // Key 
+			"scope": [
+				"variable.other.makefile"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#ffffff"
+			}
+		},
+		{ // Seperator 
+			"scope": [
+				"punctuation.separator.key-value.makefile"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#FF1493"
+			}
+		},
+		{ // Value 
+			"scope": [
+				"source.makefile"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#00FA9A"
+			}
+		},
+	]
+}
