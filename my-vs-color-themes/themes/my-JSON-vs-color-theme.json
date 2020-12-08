@@ -14,7 +14,9 @@
 		{ // Dictionary Begin End  
 			"scope": [
 				"punctuation.definition.dictionary.begin.json",
-				"punctuation.definition.dictionary.end.json"
+				"punctuation.definition.dictionary.end.json",
+				"punctuation.definition.array.begin.json.comments",
+				"punctuation.definition.array.end.json.comments",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -51,7 +53,7 @@
 		},
 		{ // Constant Value 
 			"scope": [
-				"constant.language.json"
+				"constant",
 			],
 			"settings": {
 				"fontStyle": "",

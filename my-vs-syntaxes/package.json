@@ -1,6 +1,6 @@
 {
-    "name": "myscsssyntax",
-    "displayName": "myScssSyntax",
+    "name": "mysyntaxes",
+    "displayName": "mySyntaxes",
     "description": "",
     "version": "0.0.1",
     "engines": {
@@ -13,7 +13,7 @@
         "languages": [
             {
                 "id": "scss",
-                "aliases": ["myScssSyntaxX", "scss"],
+                "aliases": ["myScssSyntax", "scss"],
                 "extensions": [".scss"],
                 "configuration": "./language-configuration.json"
             },
