@@ -62,6 +62,27 @@ class Parser {
         let regexFlags = (this.isPlainText) ? "igm" : "ig";
         let regEx = new RegExp(this.expression, regexFlags);
         let match;
+        /// Matching Template String   
+        let regExTs = new RegExp('(\\$\\{)(.)*(\\})', regexFlags);
+        let matchTs;
+        // `${hello() }`
+        while (matchTs = regExTs.exec(text)) {
+            let startPosIn = activeEditor.document.positionAt(matchTs.index);
+            let endPosIn = activeEditor.document.positionAt(matchTs.index + 2);
+            let startPos = activeEditor.document.positionAt(matchTs.index + 2);
+            let startPosOut = activeEditor.document.positionAt(matchTs.index + matchTs[0].length - 1);
+            let endPos = activeEditor.document.positionAt(matchTs.index + matchTs[0].length - 1);
+            let endPosOut = activeEditor.document.positionAt(matchTs.index + matchTs[0].length);
+            let range = { range: new vscode.Range(startPos, endPos) };
+            let rangeIn = { range: new vscode.Range(startPosIn, endPosIn) };
+            let rangeOut = { range: new vscode.Range(startPosOut, endPosOut) };
+            let matchTag = this.tags.find(item => item.tag.toLowerCase() === '$');
+            if (matchTag) {
+                matchTag.ranges.push(range);
+                matchTag.rangesIn.push(rangeIn);
+                matchTag.rangesOut.push(rangeOut);
+            }
+        }
         while (match = regEx.exec(text)) {
             let startPos = activeEditor.document.positionAt(match.index + 3);
             let endPos = activeEditor.document.positionAt(match.index + match[0].length);
@@ -173,9 +194,13 @@ class Parser {
         for (let tag of this.tags) {
             activeEditor.setDecorations(tag.decoration, tag.ranges);
             activeEditor.setDecorations(tag.decorationIn, tag.rangesIn);
+            if (tag.rangesOut.length !== 0) {
+                activeEditor.setDecorations(tag.decorationOut, tag.rangesOut);
+            }
             // clear the ranges for the next pass
             tag.ranges.length = 0;
             tag.rangesIn.length = 0;
+            tag.rangesOut.length = 0;     
         }
     }
     /**
@@ -361,8 +386,10 @@ class Parser {
                 escapedTag: escapedSequence.replace(/\//gi, "\\/"),
                 ranges: [],
                 rangesIn: [],
+                rangesOut: [],
                 decoration: vscode.window.createTextEditorDecorationType(options),
-                decorationIn: vscode.window.createTextEditorDecorationType(optionsIn)
+                decorationIn: vscode.window.createTextEditorDecorationType(optionsIn),
+                decorationOut: vscode.window.createTextEditorDecorationType(optionsIn)
             });
         }
     }
