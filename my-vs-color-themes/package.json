@@ -12,6 +12,11 @@
     "contributes": {
         "themes": [
             {
+                "label": "my-AIO-vs-color-theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/my-AIO-vs-color-theme.json"
+            },
+            {
                 "label": "my-VUE-vs-color-theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/my-VUE-vs-color-theme.json"
