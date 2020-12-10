@@ -21,11 +21,9 @@ function setEndStyle()
     return vscode.window.createTextEditorDecorationType( {
         light: {
             color: vscode.workspace.getConfiguration( 'scoper' ).endColor,
-            fontWeight: "bold",
         },
         dark: {
             color: vscode.workspace.getConfiguration( 'scoper' ).endColor,
-            fontWeight: "bold",
         }
     } );
 }

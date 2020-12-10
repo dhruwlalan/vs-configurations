@@ -1,0 +1,133 @@
+{
+    ///OTHERS   
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "scm.diffDecorations": "none",
+    ///WINDOW   
+    "window.title": "${activeEditorShort}${separator}${rootName}",
+    "window.zoomLevel": 1,
+    "window.menuBarVisibility": "default",
+    "window.enableMenuBarMnemonics": false,
+    "window.titleBarStyle": "custom",
+    "window.titleSeparator": " - ",
+    ///EDITOR   
+    "editor.fontSize": 18,
+    "editor.fontFamily": "Fira Mono",
+    "editor.fontWeight": "400",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 28,
+    "editor.foldingHighlight": false,
+    "editor.lightbulb.enabled": false,
+    "editor.links": false,
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "editor.highlightActiveIndentGuide": false,
+    "editor.renderIndentGuides": true,
+    "editor.occurrencesHighlight": false,
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "editor.roundedSelection": true,
+    "editor.cursorWidth": 1,
+    "editor.hover.delay": 300,
+    "editor.hover.sticky": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    ///EXPLORER   
+    "explorer.confirmDragAndDrop": false,
+    "explorer.incrementalNaming": "smart",
+    ///WORKBENDCH   
+    "workbench.settings.editor": "json",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.showIcons": false,
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 24,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.colorTheme": "darklight",
+    ///FILES   
+    "files.associations": {
+        "*.sublime-color-scheme": "jsonc",
+        "*.json": "jsonc",
+        ".env": "makefile"
+    },
+    ///EXTENSIONS   
+    "material-icon-theme.activeIconPack": "vue",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.folders.color": "#00BFFF",
+    "material-icon-theme.files.associations": {
+        "package-lock.json": "npm",
+        "package.json": "npm",
+        "webpack.start.js": "webpack",
+        "entries.js": "webpack",
+        ".env": "lock",
+        "server.js": "nodejs_alt",
+    },
+    "material-icon-theme.folders.associations": {
+        "node_modules": "constant",
+        "public": "public",
+        "assets": "container",
+        "abstracts": "include",
+        "base": "azure-pipelines",
+        "components": "tools",
+        "utils": "tools",
+        "configs": "webpack",
+        "favicon": "images",
+        "views": "template",
+        "controllers": "config",
+        "OTHERS": "",
+        "v-components": "vue",
+    },
+    "better-comments.tags": [
+        {
+            "tag": "/",
+            "color": "#FFFFFF",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#191970",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "#",
+            "color": "#C0C0C0",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#000000",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "$",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#000000",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "scoper.highlightColor": "#20202000",
+    "scoper.overviewColor": "#0000",
+    "scoper.endColor": "#FFFF00",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.port": 5000,
+    "gitlens.advanced.abbreviatedShaLength": 6,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "eslint.alwaysShowStatus": true,
+    "terminal.integrated.shellArgs.windows": [
+        "-l"
+    ],
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+}

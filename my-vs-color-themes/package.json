@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "my-AIO-vs-color-theme",
+                "label": "darklight",
                 "uiTheme": "vs-dark",
-                "path": "./themes/my-AIO-vs-color-theme.json"
+                "path": "./themes/darklight.json"
             },
             {
                 "label": "my-VUE-vs-color-theme",
