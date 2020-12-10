@@ -130,4 +130,8 @@
         "-l"
     ],
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "debug.showInlineBreakpointCandidates": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.foldingStrategy": "indentation",
+    "editor.glyphMargin": false,
 }
