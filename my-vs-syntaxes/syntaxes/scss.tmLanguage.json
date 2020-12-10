@@ -563,20 +563,17 @@
 					},
 					"patterns": [
 						{
-							"match": "\\b(?:(?:100|[1-9]\\d|\\d)%|from|to)(?=\\s*{)",
-							"name": "entity.other.attribute-name.scss"
-						},
-						{
-							"include": "#flow_control"
-						},
-						{
-							"include": "#interpolation"
+							"match": "(to|from)",
+							"name": "keyword.keyframes.scss"
 						},
 						{
 							"include": "#property_list"
 						},
 						{
-							"include": "#rules"
+							"include": "#general"
+						},
+						{
+							"include": "#property_values"
 						}
 					]
 				}
@@ -1363,6 +1360,10 @@
 					},
 					"contentName": "meta.property-value.scss",
 					"patterns": [
+						{
+							"match": "(,)",
+							"name": "punctuation.comma.scss"
+						},
 						{
 							"include": "#general"
 						},
