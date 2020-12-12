@@ -37,7 +37,7 @@
    "editor.multiCursorModifier": "ctrlCmd",
    "editor.renderLineHighlight": "gutter",
    "editor.foldingStrategy": "indentation",
-   "editor.glyphMargin": false,
+   "editor.glyphMargin": true,
    "[javascript]": {
       "editor.formatOnSave": false
    },
@@ -149,7 +149,12 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
    "editor.defaultFormatter": "esbenp.prettier-vscode",
-   "cSpell.enableFiletypes": ["!jsonc", "editorconfig"],
+   "cSpell.enableFiletypes": [
+      "!html",
+      "!javascript",
+      "!jsonc",
+      "editorconfig"
+   ],
    "cSpell.userWords": [
       "FENV",
       "FLEXBOX",
@@ -160,6 +165,7 @@
       "arows",
       "aself",
       "browserslist",
+      "btns",
       "cgap",
       "corejs",
       "darklight",
@@ -172,9 +178,14 @@
       "minh",
       "minw",
       "mixins",
+      "neumorphic",
       "oserver",
+      "plusplus",
+      "preconnect",
       "rgap",
+      "sansserif",
       "scoper",
+      "solway",
       "strikethrough",
       "svgs",
       "tcenter",
