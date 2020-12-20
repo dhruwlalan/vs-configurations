@@ -23,7 +23,7 @@
       //# Side Bar#//
       "sideBar.background": "#0f0f0f",
       "sideBar.foreground": "#ffffff",
-      "sideBarTitle.foreground": "#0000",
+      "sideBarTitle.foreground": "#00ffff",
       //# Editor Groups & Tabs#//
       "editorGroup.border": "#00BFFF",
       "editorGroupHeader.tabsBackground": "#0e0e0e",
@@ -654,6 +654,14 @@
          }
       },
       ///----- VUE -----///
+      //#Punctuations#//
+      {
+         "scope": ["text.html.vue-html"],
+         "settings": {
+            "fontStyle": "",
+            "foreground": "#ffffff"
+         }
+      },
       //#Strings#//
       {
          "scope": ["text.html.vue-html string.quoted.double.html"],

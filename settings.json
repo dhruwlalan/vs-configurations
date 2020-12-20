@@ -2,7 +2,7 @@
    ///OTHERS///
    "breadcrumbs.enabled": false,
    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-   "diffEditor.ignoreTrimWhitespace": false,
+   "diffEditor.ignoreTrimWhitespace": true,
    "scm.diffDecorations": "none",
    "scss.validate": false,
    ///WINDOW///
@@ -26,7 +26,7 @@
    "editor.hideCursorInOverviewRuler": true,
    "editor.overviewRulerBorder": false,
    "editor.highlightActiveIndentGuide": false,
-   "editor.renderIndentGuides": true,
+   "editor.renderIndentGuides": false,
    "editor.occurrencesHighlight": false,
    "editor.formatOnSave": true,
    "editor.suggestSelection": "first",
@@ -37,8 +37,14 @@
    "editor.multiCursorModifier": "ctrlCmd",
    "editor.renderLineHighlight": "gutter",
    "editor.foldingStrategy": "indentation",
-   "editor.glyphMargin": true,
+   "editor.glyphMargin": false,
    "[javascript]": {
+      "editor.formatOnSave": false
+   },
+   "[vue]": {
+      "editor.formatOnSave": false
+   },
+   "[markdown]": {
       "editor.formatOnSave": false
    },
    "editor.codeActionsOnSave": {
@@ -149,12 +155,7 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
    "editor.defaultFormatter": "esbenp.prettier-vscode",
-   "cSpell.enableFiletypes": [
-      "!html",
-      "!javascript",
-      "!jsonc",
-      "editorconfig"
-   ],
+   "cSpell.enableFiletypes": ["!html", "!javascript", "!jsonc", "editorconfig"],
    "cSpell.userWords": [
       "FENV",
       "FLEXBOX",
@@ -162,6 +163,7 @@
       "Middlewares",
       "acols",
       "aflow",
+      "airbnb",
       "arows",
       "aself",
       "browserslist",
@@ -182,6 +184,7 @@
       "oserver",
       "plusplus",
       "preconnect",
+      "proxied",
       "rgap",
       "sansserif",
       "scoper",
@@ -189,6 +192,8 @@
       "strikethrough",
       "svgs",
       "tcenter",
+      "templating",
       "wspace"
-   ]
+   ],
+   "open-in-browser.default": "chrome"
 }
