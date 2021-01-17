@@ -163,7 +163,13 @@
       ///----- HTML -----///
       //#Puntuations#//
       {
-         "scope": ["punctuation.definition.tag.begin.html", "punctuation.definition.tag.end.html", "punctuation.separator.key-value.html", "text.html.derivative"],
+         "scope": [
+            "text.html punctuation.definition.tag.begin.html",
+            "text.html punctuation.definition.tag.end.html",
+            "text.html punctuation.separator.key-value.html",
+            "text.html text.html.derivative",
+            "text.html"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#FFFFFF"
@@ -171,15 +177,15 @@
       },
       //#Strings#//
       {
-         "scope": ["string.quoted.double.html"],
+         "scope": ["text.html string.quoted.double.html"],
          "settings": {
             "fontStyle": "",
-            "foreground": "#00FA9A"
+            "foreground": "#F0E68C"
          }
       },
       //#doctype HTML#//
       {
-         "scope": ["meta.tag.metadata.doctype.html entity.other.attribute-name.html"],
+         "scope": ["text.html meta.tag.metadata.doctype.html entity.other.attribute-name.html"],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#FFA500"
@@ -187,7 +193,7 @@
       },
       //#Generic Tags#//
       {
-         "scope": ["entity.name.tag.html"],
+         "scope": ["text.html entity.name.tag.html"],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#FF1493"
@@ -195,7 +201,7 @@
       },
       //#Generic Attributes#//
       {
-         "scope": ["entity.other.attribute-name.html"],
+         "scope": ["text.html entity.other.attribute-name.html"],
          "settings": {
             "fontStyle": "",
             "foreground": "#00ffff"
@@ -259,7 +265,11 @@
       },
       //#Css @ rules#//
       {
-         "scope": ["keyword.control.at-rule.media.scss", "keyword.control.at-rule.keyframes.scss", "keyword.control.at-rule.fontface.scss"],
+         "scope": [
+            "keyword.control.at-rule.media.scss",
+            "keyword.control.at-rule.keyframes.scss",
+            "keyword.control.at-rule.fontface.scss"
+         ],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#FF9999"
@@ -299,7 +309,10 @@
       },
       //#Interpolation#//
       {
-         "scope": ["punctuation.definition.interpolation.begin.bracket.curly.scss", "punctuation.definition.interpolation.end.bracket.curly.scss"],
+         "scope": [
+            "punctuation.definition.interpolation.begin.bracket.curly.scss",
+            "punctuation.definition.interpolation.end.bracket.curly.scss"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#FFFF00"
@@ -322,7 +335,13 @@
       },
       //#Property Value#//
       {
-         "scope": ["meta.property-value.scss", "support.constant.property-value.css", "support.constant.font-name.css", "meta.at-rule.keyframes.scss", "entity.name.function.scss"],
+         "scope": [
+            "meta.property-value.scss",
+            "support.constant.property-value.css",
+            "support.constant.font-name.css",
+            "meta.at-rule.keyframes.scss",
+            "entity.name.function.scss"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#FFF969"
@@ -354,7 +373,10 @@
       },
       //#Operator Dark#//
       {
-         "scope": ["meta.at-rule.if.scss support.constant.property-value.css", "meta.at-rule.else.scss support.constant.property-value.css"],
+         "scope": [
+            "meta.at-rule.if.scss support.constant.property-value.css",
+            "meta.at-rule.else.scss support.constant.property-value.css"
+         ],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#FFFF00"
@@ -442,7 +464,11 @@
       },
       //#Colors#//
       {
-         "scope": ["constant.other.color.rgb-value.hex.css", "support.constant.color.w3c-standard-color-name.css", "support.constant.color.w3c-extended-color-name.css"],
+         "scope": [
+            "constant.other.color.rgb-value.hex.css",
+            "support.constant.color.w3c-standard-color-name.css",
+            "support.constant.color.w3c-extended-color-name.css"
+         ],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#EE82EE"
@@ -495,7 +521,14 @@
       },
       //#Strings#//
       {
-         "scope": ["punctuation.definition.string.begin.js", "punctuation.definition.string.end.js", "string.quoted.single.js", "string.quoted.double.js", "string.template.js", "string.regexp.js"],
+         "scope": [
+            "punctuation.definition.string.begin.js",
+            "punctuation.definition.string.end.js",
+            "string.quoted.single.js",
+            "string.quoted.double.js",
+            "string.template.js",
+            "string.regexp.js"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#00FA9A"
@@ -520,7 +553,12 @@
       },
       //#Classes#//
       {
-         "scope": ["variable.other.readwrite.alias.js", "variable.other.constant.js", "constant.language.import-export-all.js", "meta.function-call.js support.constant"],
+         "scope": [
+            "variable.other.readwrite.alias.js",
+            "variable.other.constant.js",
+            "constant.language.import-export-all.js",
+            "meta.function-call.js support.constant"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#F1FF7B"
@@ -536,7 +574,11 @@
       },
       //#Orange#//
       {
-         "scope": ["variable.parameter.js", "keyword.control.trycatch.js", "punctuation.definition.character-class.regexp"],
+         "scope": [
+            "variable.parameter.js",
+            "keyword.control.trycatch.js",
+            "punctuation.definition.character-class.regexp"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#FFA500"
@@ -568,7 +610,12 @@
       },
       //#Constants#//
       {
-         "scope": ["constant.numeric", "constant.language", "constant.character.escape.backslash.regexp", "support.constant.json.js"],
+         "scope": [
+            "constant.numeric",
+            "constant.language",
+            "constant.character.escape.backslash.regexp",
+            "support.constant.json.js"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#EE82EE"
@@ -592,7 +639,13 @@
       },
       //#Import Export#//
       {
-         "scope": ["keyword.control.import.js", "keyword.control.from.js", "keyword.control.as.js", "keyword.control.export.js", "keyword.control.default.js"],
+         "scope": [
+            "keyword.control.import.js",
+            "keyword.control.from.js",
+            "keyword.control.as.js",
+            "keyword.control.export.js",
+            "keyword.control.default.js"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#FF69B4"
@@ -680,34 +733,26 @@
       },
       //#Generic Html Tags#//
       {
-         "scope": ["entity.name.tag.html", "generic.tag.block.html", "generic.tag.inline.html"],
+         "scope": ["vue.generic.tag.html"],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#FF1493"
          }
       },
-      //#Builtin Tag#//
+      //#Vue Tag#//
       {
-         "scope": ["vue.builtin.tag.block.html", "vue.builtin.tag.inline.html"],
+         "scope": ["vue.tag.html"],
          "settings": {
             "fontStyle": "bold",
-            "foreground": "#56ffbb"
+            "foreground": "#3aeda0"
          }
       },
-      //#Builtin Tag Begin End#//
+      //#Vue Tag Begin End#//
       {
-         "scope": ["vue.builtin.tag.block.begin.html", "vue.builtin.tag.block.end.html"],
+         "scope": ["punctuation.definition.vue.tag.begin.html", "punctuation.definition.vue.tag.end.html"],
          "settings": {
             "fontStyle": "",
-            "foreground": "#56ffbb"
-         }
-      },
-      //#Component Tag#//
-      {
-         "scope": ["vue.component.tag.html"],
-         "settings": {
-            "fontStyle": "bold",
-            "foreground": "#FF69B4"
+            "foreground": "#94ffd4"
          }
       },
       //#Interpolation#//
@@ -731,18 +776,18 @@
          "scope": ["vue.attribute.html"],
          "settings": {
             "fontStyle": "bold",
-            "foreground": "#00FA9A"
+            "foreground": "#5cf1b1"
          }
       },
       //#Vue Attribute String#//
       {
-         "scope": ["vue.attribute.string.begin.html", "vue.attribute.string.end.html", "source.directive.vue punctuation.definition.block.js"],
+         "scope": ["vue.attribute.string.begin.html", "vue.attribute.string.end.html"],
          "settings": {
             "fontStyle": "",
             "foreground": "#00FA9A"
          }
       },
-      //#Vue Attributes Seperators#//
+      //#Vue Bind Attribute#//
       {
          "scope": ["vue.attribute.seperator.html"],
          "settings": {
