@@ -207,6 +207,22 @@
             "foreground": "#00ffff"
          }
       },
+      //#Entities Character#//
+      {
+         "scope": ["punctuation.definition.entity.html"],
+         "settings": {
+            "fontStyle": "bold",
+            "foreground": "#FFA500"
+         }
+      },
+      //#Entities Constant#//
+      {
+         "scope": ["constant.character.entity.html"],
+         "settings": {
+            "fontStyle": "bold",
+            "foreground": "#EE82EE"
+         }
+      },
       ///----- CSS/SCSS -----///
       //#Puntuations#//
       {
@@ -723,9 +739,9 @@
             "foreground": "#F0E68C"
          }
       },
-      //#Template Script Style Tag#//
+      //#Interpolation#//
       {
-         "scope": ["entity.name.tag.template.html", "entity.name.tag.script.html", "entity.name.tag.style.html"],
+         "scope": ["punctuation.definition.generic.begin.html", "punctuation.definition.generic.end.html"],
          "settings": {
             "fontStyle": "bold",
             "foreground": "#00FA9A"
@@ -739,12 +755,28 @@
             "foreground": "#FF1493"
          }
       },
+      //#Generic Html Attributes#//
+      {
+         "scope": ["generic.attribute.html"],
+         "settings": {
+            "fontStyle": "",
+            "foreground": "#00ffff"
+         }
+      },
+      //#Vue Tag Reserved#//
+      {
+         "scope": ["vue.tag.template.html", "vue.tag.script.html", "vue.tag.style.html", "vue.tag.reserved.html"],
+         "settings": {
+            "fontStyle": "bold",
+            "foreground": "#3aeda0"
+         }
+      },
       //#Vue Tag#//
       {
          "scope": ["vue.tag.html"],
          "settings": {
             "fontStyle": "bold",
-            "foreground": "#3aeda0"
+            "foreground": "#00ffc3"
          }
       },
       //#Vue Tag Begin End#//
@@ -752,23 +784,7 @@
          "scope": ["punctuation.definition.vue.tag.begin.html", "punctuation.definition.vue.tag.end.html"],
          "settings": {
             "fontStyle": "",
-            "foreground": "#94ffd4"
-         }
-      },
-      //#Interpolation#//
-      {
-         "scope": ["punctuation.definition.generic.begin.html", "punctuation.definition.generic.end.html"],
-         "settings": {
-            "fontStyle": "bold",
-            "foreground": "#00FA9A"
-         }
-      },
-      //#Generic Html Attributes#//
-      {
-         "scope": ["generic.attribute.html"],
-         "settings": {
-            "fontStyle": "",
-            "foreground": "#00ffff"
+            "foreground": "#00f7bd"
          }
       },
       //#Vue Attributes#//
