@@ -1,5 +1,5 @@
 {
-   "name": "darkligh",
+   "name": "darklight",
    "type": "dark",
    "colors": {
       //# Scrollbar:#//
@@ -13,7 +13,7 @@
       "editorOverviewRuler.modifiedForeground": "#0000",
       "editorOverviewRuler.addedForeground": "#0000",
       "editorOverviewRuler.deletedForeground": "#0000",
-      "editorOverviewRuler.errorForeground": "#0000",
+      "editorOverviewRuler.errorForeground": "tomato",
       "editorOverviewRuler.warningForeground": "#0000",
       "editorOverviewRuler.infoForeground": "#0000",
       "editorOverviewRuler.bracketMatchForeground": "#0000",
@@ -177,7 +177,7 @@
       },
       //#Strings#//
       {
-         "scope": ["text.html string.quoted.double.html"],
+         "scope": ["string.quoted.double.html"],
          "settings": {
             "fontStyle": "",
             "foreground": "#F0E68C"
@@ -514,7 +514,7 @@
             "foreground": "#FF1493"
          }
       },
-      ///----- JS -----///
+      ///----- JS / TS -----///
       //#Punctuations#//
       {
          "scope": [
@@ -571,7 +571,6 @@
       {
          "scope": [
             "variable.other.readwrite.alias.js",
-            "variable.other.constant.js",
             "constant.language.import-export-all.js",
             "meta.function-call.js support.constant"
          ],
@@ -703,7 +702,7 @@
          "scope": ["punctuation.definition.binding-pattern.object.js"],
          "settings": {
             "fontStyle": "",
-            "foreground": "#F0E68C"
+            "foreground": "#F7FFB3"
          }
       },
       //#Support Class#//
@@ -725,7 +724,7 @@
       ///----- VUE -----///
       //#Punctuations#//
       {
-         "scope": ["text.html.vue-html"],
+         "scope": ["text.html.vue-html", "source.vue"],
          "settings": {
             "fontStyle": "",
             "foreground": "#ffffff"
@@ -757,7 +756,7 @@
       },
       //#Generic Html Attributes#//
       {
-         "scope": ["generic.attribute.html"],
+         "scope": ["generic.attribute.html", "entity.other.attribute-name.html"],
          "settings": {
             "fontStyle": "",
             "foreground": "#00ffff"

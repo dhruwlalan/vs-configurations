@@ -1,0 +1,8 @@
+.codicon-new-file,
+.codicon-new-folder,
+.codicon-refresh,
+.codicon-collapse-all,
+.codicon-toolbar-more,
+.codicon-split-horizontal {
+	display: none !important;
+}

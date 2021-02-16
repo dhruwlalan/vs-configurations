@@ -1,0 +1,63 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+   {
+      "key": "ctrl+alt+backspace",
+      "command": "deleteWordLeft",
+      "when": "textInputFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+backspace",
+      "command": "-deleteWordLeft",
+      "when": "textInputFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+alt+oem_6",
+      "command": "workbench.action.terminal.sendSequence",
+      "when": "terminalFocus && terminalShellType == 'cmd'"
+   },
+   {
+      "key": "ctrl+backspace",
+      "command": "-workbench.action.terminal.sendSequence",
+      "when": "terminalFocus && terminalShellType == 'cmd'"
+   },
+   {
+      "key": "ctrl+alt+oem_6",
+      "command": "workbench.action.terminal.sendSequence",
+      "when": "terminalFocus"
+   },
+   {
+      "key": "ctrl+backspace",
+      "command": "-workbench.action.terminal.sendSequence",
+      "when": "terminalFocus"
+   },
+   {
+      "key": "ctrl+backspace",
+      "command": "workbench.action.toggleSidebarVisibility"
+   },
+   {
+      "key": "ctrl+k ctrl+b",
+      "command": "-workbench.action.toggleSidebarVisibility"
+   },
+   {
+      "key": "ctrl+alt+k",
+      "command": "editor.foldLevel1",
+      "when": "editorTextFocus && foldingEnabled"
+   },
+   {
+      "key": "ctrl+k ctrl+1",
+      "command": "-editor.foldLevel1",
+      "when": "editorTextFocus && foldingEnabled"
+   },
+   {
+      "key": "ctrl+alt+p",
+      "command": "projectManager.listProjects"
+   },
+   {
+      "key": "shift+alt+p",
+      "command": "-projectManager.listProjects"
+   },
+   {
+      "key": "ctrl+shift+alt+p",
+      "command": "editor.action.inspectTMScopes"
+   }
+]

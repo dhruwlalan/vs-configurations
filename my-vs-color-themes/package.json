@@ -1,51 +1,21 @@
 {
-    "name": "myvscolortheme",
-    "displayName": "myVScolorTheme",
-    "description": "My Color scheme for Visual Studio Code",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "darklight",
-                "uiTheme": "vs-dark",
-                "path": "./themes/darklight.json"
-            },
-            {
-                "label": "my-VUE-vs-color-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/my-VUE-vs-color-theme.json"
-            },
-            {
-                "label": "my-HTML-vs-color-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/my-HTML-vs-color-theme.json"
-            },
-            {
-                "label": "my-JS-vs-color-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/my-JS-vs-color-theme.json"
-            },
-            {
-                "label": "my-JSON-vs-color-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/my-JSON-vs-color-theme.json"
-            },
-            {
-                "label": "my-SCSS-vs-color-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/my-SCSS-vs-color-theme.json"
-            },
-            {
-                "label": "my-ENV-vs-color-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/my-ENV-vs-color-theme.json"
-            }
-        ]
-    }
+   "name": "myvscolortheme",
+   "displayName": "myVScolorTheme",
+   "description": "My Color scheme for Visual Studio Code",
+   "version": "0.0.1",
+   "engines": {
+      "vscode": "^1.51.0"
+   },
+   "categories": [
+      "Themes"
+   ],
+   "contributes": {
+      "themes": [
+         {
+            "label": "darklight",
+            "uiTheme": "vs-dark",
+            "path": "./themes/darklight.json"
+         }
+      ]
+   }
 }

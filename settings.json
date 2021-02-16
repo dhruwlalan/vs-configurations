@@ -2,6 +2,7 @@
    ///OTHERS///
    "breadcrumbs.enabled": false,
    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+   "terminal.integrated.showExitAlert": false,
    "diffEditor.ignoreTrimWhitespace": true,
    "scm.diffDecorations": "none",
    "scss.validate": false,
@@ -23,12 +24,12 @@
    "editor.links": false,
    "editor.renderWhitespace": "none",
    "editor.minimap.enabled": false,
-   "editor.hideCursorInOverviewRuler": true,
-   "editor.overviewRulerBorder": false,
-   "editor.highlightActiveIndentGuide": false,
    "editor.renderIndentGuides": false,
+   "editor.highlightActiveIndentGuide": false,
    "editor.occurrencesHighlight": false,
    "editor.formatOnSave": true,
+   "editor.formatOnType": true,
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
    "editor.suggestSelection": "first",
    "editor.roundedSelection": true,
    "editor.cursorWidth": 1,
@@ -38,6 +39,10 @@
    "editor.renderLineHighlight": "gutter",
    "editor.foldingStrategy": "indentation",
    "editor.glyphMargin": false,
+   "editor.formatOnPaste": false,
+   "editor.hideCursorInOverviewRuler": true,
+   "editor.overviewRulerBorder": false,
+   "editor.linkedEditing": true,
    "[javascript]": {
       "editor.formatOnSave": false
    },
@@ -47,16 +52,20 @@
    "[markdown]": {
       "editor.formatOnSave": false
    },
+   "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
    "editor.codeActionsOnSave": {
       "source.fixAll": true
    },
    ///EXPLORER///
    "explorer.confirmDragAndDrop": false,
    "explorer.incrementalNaming": "smart",
+   "explorer.compactFolders": false,
    ///WORKBENDCH///
+   "workbench.activityBar.visible": false,
    "workbench.settings.editor": "json",
    "workbench.statusBar.visible": true,
-   "workbench.activityBar.visible": false,
    "workbench.iconTheme": "material-icon-theme",
    "workbench.editor.closeOnFileDelete": true,
    "workbench.editor.showIcons": false,
@@ -71,10 +80,13 @@
       ".env": "makefile"
    },
    ///EXTENSIONS///
-   "material-icon-theme.activeIconPack": "vue",
+   "material-icon-theme.activeIconPack": "none",
    "material-icon-theme.hidesExplorerArrows": true,
    "material-icon-theme.folders.color": "#00BFFF",
    "material-icon-theme.files.associations": {
+      "store.js": "vuex-store",
+      "firebase.js": "firebase",
+      "firebaseConfig.js": "firebase",
       "package-lock.json": "npm",
       "package.json": "npm",
       "webpack.start.js": "webpack",
@@ -83,6 +95,7 @@
       "server.js": "nodejs_alt"
    },
    "material-icon-theme.folders.associations": {
+      "store": "vuex-store",
       "node_modules": "constant",
       "public": "public",
       "assets": "container",
@@ -146,20 +159,14 @@
    "gitlens.currentLine.enabled": false,
    "eslint.alwaysShowStatus": true,
    "terminal.integrated.shellArgs.windows": ["-l"],
-   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
    "debug.showInlineBreakpointCandidates": false,
    "prettier.disableLanguages": ["js"],
-   "editor.formatOnPaste": true,
-   "editor.formatOnType": true,
-   "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "editor.defaultFormatter": "esbenp.prettier-vscode",
-   "cSpell.enableFiletypes": ["!html", "!javascript", "!jsonc", "editorconfig"],
+   "cSpell.enableFiletypes": ["!html", "!javascript", "!jsonc", "!scss", "editorconfig"],
    "cSpell.userWords": [
       "FENV",
       "FLEXBOX",
       "Fira",
+      "Github's",
       "Middlewares",
       "acols",
       "aflow",
@@ -172,11 +179,15 @@
       "corejs",
       "darklight",
       "dhruw",
+      "editorconfig",
       "engins",
       "entrypoints",
+      "errcode",
+      "lalan",
       "maxh",
       "maxw",
       "mcenter",
+      "midtitle",
       "minh",
       "minw",
       "mixins",
@@ -185,15 +196,38 @@
       "plusplus",
       "preconnect",
       "proxied",
+      "quickrepo",
       "rgap",
       "sansserif",
       "scoper",
+      "showeyesvg",
+      "signup",
       "solway",
       "strikethrough",
+      "svgbox",
       "svgs",
       "tcenter",
       "templating",
       "wspace"
    ],
-   "open-in-browser.default": "chrome"
+   "javascript.updateImportsOnFileMove.enabled": "prompt",
+   "javascript.preferences.quoteStyle": "single",
+   "typescript.preferences.quoteStyle": "single",
+   "prettier.singleQuote": true,
+   "prettier.jsxSingleQuote": true,
+   "emmet.showAbbreviationSuggestions": true,
+   "emmet.showExpandedAbbreviation": "always",
+   "emmet.includeLanguages": {
+      "vue-html": "html",
+      "vue": "html"
+   },
+   "typescript.suggest.paths": true,
+   "vscode_custom_css.imports": ["file:///C:/Users/dhruw-pc/AppData/Roaming/Code/User/custom.css"],
+   "vscode_custom_css.policy": true,
+   "theme-by-language.themes": {
+      "typescript": "Default Dark+",
+      "*": "darklight"
+   },
+   "projectManager.showProjectNameInStatusBar": false,
+   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration"
 }
