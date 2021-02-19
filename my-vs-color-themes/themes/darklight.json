@@ -540,7 +540,8 @@
             "variable.other.readwrite.ts",
             "variable.other.constant.ts",
             "meta.brace.round.ts",
-            "meta.brace.square.ts"
+            "meta.brace.square.ts",
+            "keyword.operator.type.annotation.ts"
          ],
          "settings": {
             "fontStyle": "",
@@ -587,7 +588,11 @@
             "keyword.operator.expression.typeof.ts",
             "keyword.operator.new.ts",
             "storage.type.function.ts",
-            "storage.type.class.ts"
+            "storage.type.class.ts",
+            "storage.type.enum.ts",
+            "storage.type.type.ts",
+            "storage.type.property.ts",
+            "storage.type.interface.ts"
          ],
          "settings": {
             "fontStyle": "",
@@ -615,7 +620,8 @@
          "scope": [
             "variable.other.object.js",
             //#TS#//
-            "variable.other.object.ts"
+            "variable.other.object.ts",
+            "entity.name.type.enum.ts"
          ],
          "settings": {
             "fontStyle": "",
@@ -747,7 +753,8 @@
             //#TS#//
             "meta.object-literal.key.ts",
             "variable.other.object.property.ts",
-            "variable.other.property.ts"
+            "variable.other.property.ts",
+            "variable.object.property.ts"
          ],
          "settings": {
             "foreground": "#ff9999"
@@ -769,7 +776,7 @@
       {
          "scope": [
             "variable.other.constant.property.js",
-            //#TS#//
+            "variable.other.enummember.ts",
             "variable.other.constant.property.ts"
          ],
          "settings": {
@@ -809,7 +816,8 @@
             "support.class",
             //#TS#//
             "entity.name.type.module.ts",
-            "entity.name.type.class.ts"
+            "entity.name.type.class.ts",
+            "entity.other.inherited-class.ts"
          ],
          "settings": {
             "fontStyle": "bold",
@@ -830,7 +838,14 @@
       },
       //#TS Specific#//
       {
-         "scope": ["entity.name.type.ts", "support.type.primitive.ts"],
+         // types
+         "scope": [
+            "entity.name.type.ts",
+            "support.type.primitive.ts",
+            "entity.name.type.alias.ts",
+            "entity.name.type.interface.ts",
+            "meta.interface.ts entity.other.inherited-class.ts"
+         ],
          "settings": {
             "fontStyle": "",
             "foreground": "#00BFFF"
