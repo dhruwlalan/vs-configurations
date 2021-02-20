@@ -541,7 +541,9 @@
             "variable.other.constant.ts",
             "meta.brace.round.ts",
             "meta.brace.square.ts",
-            "keyword.operator.type.annotation.ts"
+            "keyword.operator.type.annotation.ts",
+            "punctuation.definition.typeparameters.begin.ts",
+            "punctuation.definition.typeparameters.end.ts"
          ],
          "settings": {
             "fontStyle": "",
@@ -636,6 +638,7 @@
             "punctuation.definition.character-class.regexp",
             //#TS#//
             "variable.parameter.ts",
+            "punctuation.decorator.ts",
             "keyword.control.trycatch.ts"
          ],
          "settings": {
@@ -717,7 +720,8 @@
             "support.function.ts",
             "support.function.json.ts",
             "variable.language.super.ts",
-            "meta.function-call.ts support.function"
+            "meta.function-call.ts support.function",
+            "meta.decorator.ts variable.other.readwrite.ts"
          ],
          "settings": {
             "fontStyle": "",
